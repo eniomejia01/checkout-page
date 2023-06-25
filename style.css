@@ -33,7 +33,7 @@ h2 {
     font-weight: 600;
     line-height: 22px;
     color: #333333;
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 label {
@@ -42,7 +42,9 @@ label {
     font-size: 12px;
     line-height: 15px;
     color: #4f4f4f;
+
 }
+
 
 input{
     padding: 1.5rem;
@@ -146,7 +148,52 @@ input:focus-visible{
 .contenedor3 {
     margin-top: 6rem;
     background-color: #f2f2f2;
-    width: 38rem;
-    height: 50rem;
+    width: 40rem;
+    height: 55rem;
     border-radius: 12px;
+}
+
+.contenedor4 {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content-product {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: flex-start;
+
+}
+
+.not-margin p{
+    margin: 0 0 1rem 0;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #4e5150;
+}
+
+.content-product p{
+    padding: 0;
+}
+
+
+.product{
+    width: 134.21px;
+    height: 136.27px;
+    border-radius: 13px;
+}
+
+.orang-e{
+ color: #F2994A;
+}
+
+.raya{
+    color: #4e5150;
+    font-size: 12px;
+    text-decoration: line-through;
+    
 }

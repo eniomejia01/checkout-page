@@ -59,22 +59,31 @@ input{
     line-height: 20px;
 }
 
-input:focus-visible{
-
+select {
+    padding: 1.5rem;
     border: 1px solid #828282;
+    border-radius: 12px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
 }
+
 
 .country {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: rem;
 }
 
 .bloque {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 }
 
 .email-icon{
@@ -118,8 +127,8 @@ input:focus-visible{
 .world-icon{
     background-image: url('src/globe-americas.svg');
     background-repeat: no-repeat;
-    background-position: 5.5% 50%;
-    padding-left: 5rem;
+    background-position: 10% 50%;
+    padding-left: 4.5rem;
 }
 
 .postal-icon {
@@ -168,7 +177,7 @@ input:focus-visible{
 }
 
 .not-margin p{
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.2rem 0;
     font-family: Montserrat;
     font-weight: 600;
     font-size: 16px;
@@ -194,6 +203,72 @@ input:focus-visible{
 .raya{
     color: #4e5150;
     font-size: 12px;
-    text-decoration: line-through;
-    
+    text-decoration: line-through;   
+}
+
+
+.sub-footer {
+    margin-top: 7rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+    color: #333333;
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.price {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.other-footer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: #333333;
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.cajita {
+    padding: 2rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    position: relative;
+    transform: translateY(20%);
+}
+
+.three-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.three-column img{
+    border-radius: 6px;
+    width: 2rem;
+}
+
+.three-column img:hover{
+    cursor: pointer;
+}
+
+.three-column p{
+    margin: 0;
+    padding: 0;
+
+}
+.color-1 {
+    background: #E0E0E0;
 }

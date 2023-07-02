@@ -6,25 +6,56 @@ html {
     box-sizing: inherit;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    max-width: 60%;
+.contenedor{ 
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 95%;
     margin: 0 auto;
-
 }
 
 .contenedor2{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin-top: 6rem;
 }
+
 .formulario{
     display: flex;
     flex-direction: column;
+}
+
+.country {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 auto;
+
+}
+
+.check {
+    display: flex;
+    align-items: center;
+
+}
+
+.check input{
+    margin-right: 1rem;
+    width: 21px;
+    height: 21px;
+}
+
+.contenedor3{
+    margin: 6rem auto;
+    background-color: #f2f2f2;
+    height: 55rem;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.check p{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 h2 {
@@ -53,11 +84,18 @@ input{
     margin-top: 1rem;
     margin-bottom: 2rem;
 
+
     font-family: Montserrat;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
 }
+
+input:focus {
+    outline: none;
+    border: 1px solid #F2994A;
+  }
+  
 
 select {
     padding: 1.5rem;
@@ -71,19 +109,6 @@ select {
     font-size: 16px;
     line-height: 20px;
     color: #828282;
-}
-
-
-.country {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.bloque {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
 }
 
 .email-icon{
@@ -129,6 +154,7 @@ select {
     background-repeat: no-repeat;
     background-position: 10% 50%;
     padding-left: 4.5rem;
+    max-width: 100%;
 }
 
 .postal-icon {
@@ -136,6 +162,7 @@ select {
     background-repeat: no-repeat;
     background-position: 5.5% 50%;
     padding-left: 4rem;
+    width: 100%;
 }
 
 .button {
@@ -150,16 +177,15 @@ select {
     font-size: 16px;
     line-height: 19.5px;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 33rem;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+
 }
 
-
-.contenedor3 {
-    margin-top: 6rem;
-    background-color: #f2f2f2;
-    width: 40rem;
-    height: 55rem;
-    border-radius: 12px;
+.button:hover{
+   background-color: #e07212; 
 }
 
 .contenedor4 {
@@ -267,8 +293,85 @@ select {
 .three-column p{
     margin: 0;
     padding: 0;
-
 }
+
 .color-1 {
     background: #E0E0E0;
 }
+
+@media (min-width: 768px) {  
+    
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6rem auto;
+    width: 50rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 0 auto;
+    width: 50rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
+
+.check input{
+    margin-right: 2rem;
+    width: 21px;
+    height: 21px;
+}
+
+.contenedor3 {
+
+    margin: 6rem auto;
+    background-color: #f2f2f2;
+    height: 55rem;
+    border-radius: 12px;
+    width: 75%;
+}
+
+}
+
+@media (max-width: 1024px) {  
+    .contenedor{ 
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+@media (min-width: 360px) {  
+    .contenedor3 {
+        margin: 6rem auto;
+        background-color: #f2f2f2;
+        height: 60rem;
+        border-radius: 12px;
+        /* width: 100%; */
+    }
+
+}
+
